@@ -1,0 +1,346 @@
+<resources>
+    <string name="app_name">Android_WEATHER</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="titlePressure">давление</string>
+    <string name="titleHumidity">влажность</string>
+    <string name="titleWind">ветер</string>
+
+    <string name="titleMorning">Утро</string>
+    <string name="titleDay">День</string>
+    <string name="titleEvening">Вечер</string>
+    <string name="titleNight">Ночь</string>
+
+    <string name="search">Введите город...</string>
+
+    <string name="day">день</string>
+    <string name="pasmurno">пасмурно</string>
+    <string name="pas_rain">пасмурно, небольшой дождь</string>
+    <string name="cloud_shine">облачно с прояснениями</string>
+    <string name="power_rain">сильный дождь</string>
+    <string name="rain">дождь</string>
+    <string name="nointernet">отсутствует интернет</string>
+    <string name="repeat">повторить?</string>
+    <string name="yes">да</string>
+    <string name="no">нет</string>
+
+    <string name="sunrise">рассвет</string>
+    <string name="sunset">закат</string>
+
+    <string-array name="days">
+        <item>понедельник</item>
+        <item>вторник</item>
+        <item>среда</item>
+        <item>четверг</item>
+        <item>пятница</item>
+        <item>суббота</item>
+        <item>воскресенье</item>
+        <item>понедельник</item>
+        <item>вторник</item>
+        <item>среда</item>
+        <item>четверг</item>
+        <item>пятница</item>
+        <item>суббота</item>
+        <item>воскресенье</item>
+    </string-array>
+
+    <string-array name="id">
+        <item>34314</item>
+        <item>34315</item>
+        <item>33804</item>
+        <item>33805</item>
+        <item>33806</item>
+        <item>33301</item>
+        <item>33302</item>
+        <item>33312</item>
+        <item>33317</item>
+        <item>33830</item>
+        <item>33831</item>
+        <item>33834</item>
+        <item>33836</item>
+        <item>33325</item>
+        <item>33846</item>
+        <item>33848</item>
+        <item>33849</item>
+        <item>33338</item>
+        <item>33339</item>
+        <item>33340</item>
+        <item>33341</item>
+        <item>33345</item>
+        <item>33346</item>
+        <item>33347</item>
+        <item>33355</item>
+        <item>33869</item>
+        <item>33870</item>
+        <item>33361</item>
+        <item>33362</item>
+        <item>33363</item>
+        <item>33231</item>
+        <item>33372</item>
+        <item>33487</item>
+        <item>33887</item>
+        <item>33888</item>
+        <item>33889</item>
+        <item>34422</item>
+        <item>33383</item>
+        <item>34409</item>
+        <item>33898</item>
+        <item>33899</item>
+        <item>33902</item>
+        <item>34415</item>
+        <item>34416</item>
+        <item>33393</item>
+        <item>33398</item>
+        <item>33897</item>
+        <item>33400</item>
+        <item>33915</item>
+        <item>34410</item>
+        <item>33414</item>
+        <item>33415</item>
+        <item>33416</item>
+        <item>33423</item>
+        <item>33476</item>
+        <item>33391</item>
+        <item>34501</item>
+        <item>33904</item>
+        <item>33444</item>
+        <item>33445</item>
+        <item>34504</item>
+        <item>33464</item>
+        <item>33475</item>
+        <item>34502</item>
+        <item>33399</item>
+        <item>34510</item>
+        <item>34511</item>
+        <item>34515</item>
+        <item>34517</item>
+        <item>34519</item>
+        <item>34520</item>
+        <item>34522</item>
+        <item>34523</item>
+        <item>34525</item>
+        <item>34526</item>
+        <item>34527</item>
+        <item>34528</item>
+        <item>33505</item>
+        <item>33506</item>
+        <item>33645</item>
+        <item>33513</item>
+        <item>33516</item>
+        <item>33526</item>
+        <item>33527</item>
+        <item>33547</item>
+        <item>33548</item>
+        <item>34601</item>
+        <item>33837</item>
+        <item>33496</item>
+        <item>33562</item>
+        <item>33564</item>
+        <item>33565</item>
+        <item>33566</item>
+        <item>33056</item>
+        <item>33577</item>
+        <item>33903</item>
+        <item>33581</item>
+        <item>34606</item>
+        <item>34608</item>
+        <item>33586</item>
+        <item>33587</item>
+        <item>33592</item>
+        <item>33088</item>
+        <item>33605</item>
+        <item>34529</item>
+        <item>33613</item>
+        <item>33615</item>
+        <item>33630</item>
+        <item>33631</item>
+        <item>33632</item>
+        <item>33635</item>
+        <item>33638</item>
+        <item>33643</item>
+        <item>33644</item>
+        <item>33133</item>
+        <item>33135</item>
+        <item>33648</item>
+        <item>33649</item>
+        <item>33658</item>
+        <item>33663</item>
+        <item>33155</item>
+        <item>33156</item>
+        <item>34704</item>
+        <item>33173</item>
+        <item>33686</item>
+        <item>34712</item>
+        <item>34717</item>
+        <item>33698</item>
+        <item>33187</item>
+        <item>33705</item>
+        <item>33706</item>
+        <item>33711</item>
+        <item>33719</item>
+        <item>33213</item>
+        <item>33215</item>
+        <item>33397</item>
+        <item>33699</item>
+        <item>33756</item>
+        <item>33757</item>
+        <item>33258</item>
+        <item>33261</item>
+        <item>33776</item>
+        <item>33777</item>
+        <item>33275</item>
+        <item>34300</item>
+        <item>33910</item>
+        <item>33791</item>
+    </string-array>
+
+    <string-array name="city">
+        <item>Змиёв</item>
+        <item>Балаклея</item>
+        <item>Орджоникидзе</item>
+        <item>Никополь</item>
+        <item>Энергодар</item>
+        <item>Ровно</item>
+        <item>Здолбунов</item>
+        <item>Новоград-Волынский</item>
+        <item>Шепетовка</item>
+        <item>Белгород-Днестровский</item>
+        <item>Овидиополь</item>
+        <item>Раздельная</item>
+        <item>Ильичёвск</item>
+        <item>Житомир</item>
+        <item>Николаев</item>
+        <item>Очаков</item>
+        <item>Коблево</item>
+        <item>Радомышль</item>
+        <item>Фастов</item>
+        <item>Ирпень</item>
+        <item>Васильков</item>
+        <item>Киев</item>
+        <item>Обухов</item>
+        <item>Борисполь</item>
+        <item>Переяслав-Хмельницкий</item>
+        <item>Новая Каховка</item>
+        <item>Каховка</item>
+        <item>Пирятин</item>
+        <item>Прилуки</item>
+        <item>Гребёнка</item>
+        <item>Чернобыль</item>
+        <item>Днепродзержинск</item>
+        <item>Черкассы</item>
+        <item>Болград</item>
+        <item>Рени</item>
+        <item>Измаил</item>
+        <item>Северодонецк</item>
+        <item>Ахтырка</item>
+        <item>Лозовая</item>
+        <item>Вилково</item>
+        <item>Затока</item>
+        <item>Херсон</item>
+        <item>Изюм</item>
+        <item>Купянск</item>
+        <item>Львов</item>
+        <item>Дрогобыч</item>
+        <item>Арциз</item>
+        <item>Золочев</item>
+        <item>Аскания-Нова</item>
+        <item>Чугуев</item>
+        <item>Почаев</item>
+        <item>Тернополь</item>
+        <item>Подволочиск</item>
+        <item>Хмельницкий</item>
+        <item>Смела</item>
+        <item>Мостиска</item>
+        <item>Новомосковск</item>
+        <item>Цюрупинск</item>
+        <item>Бердичев</item>
+        <item>Казатин</item>
+        <item>Днепропетровск</item>
+        <item>Белая Церковь</item>
+        <item>Канев</item>
+        <item>Павлоград</item>
+        <item>Трускавец</item>
+        <item>Артемовск</item>
+        <item>Краматорск</item>
+        <item>Красноармейск</item>
+        <item>Первомайск</item>
+        <item>Донецк</item>
+        <item>Горловка</item>
+        <item>Алчевск</item>
+        <item>Луганск</item>
+        <item>Енакиево</item>
+        <item>Харцызск</item>
+        <item>Лисичанск</item>
+        <item>Краснодон</item>
+        <item>Диканька</item>
+        <item>Полтава</item>
+        <item>Яремча</item>
+        <item>Стрый</item>
+        <item>Славское</item>
+        <item>Ивано-Франковск</item>
+        <item>Калуш</item>
+        <item>Хотин</item>
+        <item>Каменец-Подольский</item>
+        <item>Запорожье</item>
+        <item>Одесса</item>
+        <item>Миргород</item>
+        <item>Винница</item>
+        <item>Жмеринка</item>
+        <item>Немиров</item>
+        <item>Тульчин</item>
+        <item>Новгород-Северский</item>
+        <item>Гайсин</item>
+        <item>Скадовск</item>
+        <item>Жашков</item>
+        <item>Гуляйполе</item>
+        <item>Пологи</item>
+        <item>Звенигородка</item>
+        <item>Умань</item>
+        <item>Шпола</item>
+        <item>Сарны</item>
+        <item>Чигирин</item>
+        <item>Попасная</item>
+        <item>Александрия</item>
+        <item>Кременчуг</item>
+        <item>Чоп</item>
+        <item>Ужгород</item>
+        <item>Мукачево</item>
+        <item>Свалява</item>
+        <item>Хуст</item>
+        <item>Ворохта</item>
+        <item>Буковель</item>
+        <item>Славутич</item>
+        <item>Чернигов</item>
+        <item>Драгобрат</item>
+        <item>Верховина</item>
+        <item>Черновцы</item>
+        <item>Могилев-Подольский</item>
+        <item>Шостка</item>
+        <item>Глухов</item>
+        <item>Мелитополь</item>
+        <item>Ковель</item>
+        <item>Гайворон</item>
+        <item>Мариуполь</item>
+        <item>Бердянск</item>
+        <item>Ульяновка</item>
+        <item>Луцк</item>
+        <item>Помошная</item>
+        <item>Новоукраинка</item>
+        <item>Кировоград</item>
+        <item>Долинская</item>
+        <item>Овруч</item>
+        <item>Коростень</item>
+        <item>Моршин</item>
+        <item>Первомайск</item>
+        <item>Котовск</item>
+        <item>Балта</item>
+        <item>Бахмач</item>
+        <item>Конотоп</item>
+        <item>Южноукраинск</item>
+        <item>Вознесенск</item>
+        <item>Сумы</item>
+        <item>Харьков</item>
+        <item>Геническ</item>
+        <item>Кривой Рог</item>
+    </string-array>
+</resources>

@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#6e9cff">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/title"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/titlePressure"
+            android:id="@+id/titlePressure"
+            android:textSize="8dp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/titleHumidity"
+            android:id="@+id/titleHumidity"
+            android:textIsSelectable="false"
+            android:textSize="8dp"
+            android:layout_alignParentRight="false"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/titleWind"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@+id/titlePressure"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/titleWind"
+            android:id="@+id/titleWind"
+            android:textSize="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="16-09-2015"
+            android:id="@+id/titleData"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="5dp"
+            android:textSize="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="ВС"
+            android:id="@+id/titleWeekday"
+            android:textColor="#ff3597"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/titleData"
+            android:layout_toLeftOf="@+id/titlePressure"
+            android:textSize="8dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/information"
+        android:layout_below="@+id/title">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/morning_title">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/titleMorning"
+            android:id="@+id/title_morning"
+            android:textColor="@android:color/white"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="(07:40)"
+                android:id="@+id/title_sunrise"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ffffff"
+                android:layout_toRightOf="@+id/title_morning" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/morning_temperature"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/morning"
+            android:background="?attr/colorPrimary"
+            android:elevation="6dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="облачно"
+                android:id="@+id/m_status"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_toLeftOf="@+id/m_pressure"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="750"
+                android:id="@+id/m_pressure"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/white"
+                android:layout_weight="1"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="68%"
+                android:id="@+id/m_humidity"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_weight="1"
+                android:layout_toLeftOf="@+id/m_wind"
+                android:layout_toRightOf="@+id/m_pressure"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="4.5 м\с"
+                android:id="@+id/m_wind"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:maxWidth="20dp"
+                android:minWidth="20dp"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/day_title">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/titleDay"
+                android:id="@+id/tille_day"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/day_temperature"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentBottom="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/day"
+            android:background="?attr/colorPrimary"
+            android:elevation="6dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="облачно"
+                android:id="@+id/d_status"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:maxLines="2"
+                android:layout_toLeftOf="@+id/d_pressure"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="false"
+                android:gravity="center_vertical"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="750"
+                android:id="@+id/d_pressure"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_weight="1"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="68%"
+                android:id="@+id/d_humidity"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_weight="1"
+                android:layout_toLeftOf="@+id/d_wind"
+                android:layout_toRightOf="@+id/d_pressure"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="4.5"
+                android:id="@+id/d_wind"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_weight="1"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="false"
+                android:gravity="center"
+                android:maxWidth="20dp"
+                android:minWidth="20dp"
+                android:layout_marginRight="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/evening_title">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/titleEvening"
+                android:id="@+id/title_evening"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="(16:04)"
+                android:id="@+id/title_sunset"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ffffff"
+                android:layout_toRightOf="@+id/title_evening" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/evening_temperature"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/evening"
+            android:background="?attr/colorPrimary"
+            android:elevation="6dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="облачно с прояснениями"
+                android:id="@+id/e_status"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:maxLines="2"
+                android:minLines="2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/e_pressure"
+                android:gravity="center_vertical"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="750"
+                android:id="@+id/e_pressure"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_weight="1"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="68%"
+                android:id="@+id/e_humidity"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_weight="1"
+                android:layout_toRightOf="@+id/e_pressure"
+                android:layout_toLeftOf="@+id/e_wind"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="4.5"
+                android:id="@+id/e_wind"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_weight="1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical|center_horizontal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/night_title">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/titleNight"
+                android:id="@+id/title_night"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="false"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/night_temperature"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/night"
+            android:background="?attr/colorPrimary"
+            android:elevation="6dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="облачно"
+                android:id="@+id/n_status"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@+id/n_pressure"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="750"
+                android:id="@+id/n_pressure"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/white"
+                android:layout_weight="1"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="68%"
+                android:id="@+id/n_humidity"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_weight="1"
+                android:layout_toLeftOf="@+id/n_wind"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/n_pressure"
+                android:gravity="center"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="4.5"
+                android:id="@+id/n_wind"
+                android:layout_gravity="top|bottom|center|right"
+                android:textColor="@android:color/white"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical|center_horizontal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="В этот день нет праздников"
+        android:id="@+id/holiday"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_below="@+id/information"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>
